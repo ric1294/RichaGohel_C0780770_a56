@@ -3,7 +3,7 @@ package com.richa;
 import javax.swing.*;
 
 //program class
-public class Assignment extends calculateValue {
+public class Assignment extends CalculateValue {
     //Instance fields
     private String firstName;
     private String lastName;
@@ -134,7 +134,7 @@ public class Assignment extends calculateValue {
         this.setItemsCost(this.getItems().getBoxes());
 
         //Method overloading
-        calculateValue cv = new calculateValue();
+        CalculateValue cv = new CalculateValue();
         cv.displayServicesCost(this.getServices().getPrice());
         cv.displayOptionsCost(this.getOptions().getStorage());
         cv.displayItemsCost(this.getItems().getBoxes());
